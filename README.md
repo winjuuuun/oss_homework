@@ -62,6 +62,8 @@ Swap
 ***그 이 하 내용***
 **프로세스 상태**
 <img width="407" alt="image" src="https://user-images.githubusercontent.com/106620115/171996307-864fbd84-dfec-4f71-951e-ee70c1847a04.png">
+|||
+|---|---|
 |PID|프로세스 ID(PID)|
 |USER|프로세스를 실행시킨 사용자ID|
 |PR|프로세스의 우선순위(priority)|
