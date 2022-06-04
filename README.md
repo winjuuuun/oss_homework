@@ -132,6 +132,27 @@ ps -U root -u root:특정 사용자가 돌리는 프로세스의 정보를 알�
 ps -t pts/18:특정 TTY에서 실행되는 프로세스 또한 뽑아서 확인할수있다.-t옵션을 사용
 ps -e -o pid,ppid,uname,pcpu,pmem,comm,tty|head:-o옵션을 사용하면 원하는 컬럼만 보이도록 포맷을 정할수있다.
 
+***jobs란?***
+**작업의 상태를 표시하는 명령어로 현재 쉘 세션에서 실행시킨 백 그라운드 작업의 목록이 출력되며, 각 작업에는 변호가 붙어 있어 kill 명령어 뒤에 %번호 등으로 사용할수있다.**
+<img width="411" alt="image" src="https://user-images.githubusercontent.com/106620115/172019724-8891c7f6-d74d-4582-91c1-ae1931400d52.png">
+
+|상태|설명|
+|---|---|
+|Running|작업이 계속 진행중임|
+|Done|작업이 완료되어 0을 반환|
+|Done(code)|작업이 종료되었으며 0이 아닌 코드를 반환|
+|Stopped(SIGTSTP)|SIGTSTP 시그널이 작업을 일시 중단|
+|Stopped(SIGTTIN)|SIGTTIN 시그널이 작업을 일시 중당|
+|Stopped(SIGTTOU)|SIGTTOU 시크널이 작업을 일시 중단|
+
+**옵션**
+|옵션|설명|
+|---|---|
+|-ㅣ|프로세스 그룹 ID를 state 필드 앞에 출력|
+|-n|프로세스 그룹 중에 대표 프로세스 ID를 출력|
+|-p|각 프로세스 ID에 대해 한 행씩 출력|
+|command|지정한 명령어를 실행|
+
 
 
 
