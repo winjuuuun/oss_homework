@@ -153,11 +153,15 @@ ps -e -o pid,ppid,uname,pcpu,pmem,comm,tty|head:-o옵션을 사용하면 원하�
 |-p|각 프로세스 ID에 대해 한 행씩 출력|
 |command|지정한 명령어를 실행|
 
+**ps명령어 요약**
+
 ps -ㅣ 상세 내용 보여줌
 ps -e 모든 프로세스 보여줌
 ps -ef 모든 프로세스 모든 정보를 출력
 ps -efc c를 추가하여 명령이름까지 보여줌
 
+***kill이란?***
+**프로세스를 죽이는것**
 **프로세스마다 고유에 PID값이 존재하고 PID값으로 프로세스를 죽인다.-9는 강제종료,-15는 작업 종료**
 ***kill_옵션PID***
 <img width="413" alt="image" src="https://user-images.githubusercontent.com/106620115/172021155-c10d0838-50cc-4979-a32a-c744e3542be5.png">
